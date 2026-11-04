@@ -5,14 +5,15 @@ import {
   ArrowRight, ChevronRight, Play, Search, Share2, Monitor,
   Palette, FileText, Target, Mail, Compass, BarChart2,
   CheckCircle, Star, TrendingUp, Users, Award, Zap, Globe,
-  MessageCircle, Quote
+  MessageCircle, Quote,
+  Youtube, GraduationCap, MessageSquare, BadgeDollarSign,
 } from 'lucide-react'
 import { useInView } from 'react-intersection-observer'
 import './Home.css'
-import { SERVICES } from '../utils/constants'
+import { SERVICES, NEW_SERVICES } from '../utils/constants'
 
 // ─── Icon map ──────────────────────────────────────────────────────────────
-const IconMap = { Search, Share2, Monitor, Palette, FileText, Target, Mail, Compass, BarChart2 }
+const IconMap = { Search, Share2, Monitor, Palette, FileText, Target, Mail, Compass, BarChart2, Youtube, GraduationCap, MessageSquare, BadgeDollarSign, TrendingUp }
 
 // ─── Animated Counter ──────────────────────────────────────────────────────
 function Counter({ end, suffix = '', duration = 2000 }) {
@@ -311,6 +312,39 @@ function ServicesSection() {
             <ServiceCard key={service.id} service={service} delay={i * 60} />
           ))}
         </div>
+
+        {/* New Services teaser strip */}
+        <Reveal delay={100}>
+          <div className="home-new-services">
+            <div className="home-new-services__header">
+              <span className="home-new-services__label">
+                <Zap size={13} /> New Services
+              </span>
+              <p className="home-new-services__sub">We've expanded — explore our latest offerings</p>
+            </div>
+            <div className="home-new-services__pills">
+              {NEW_SERVICES.map(s => {
+                const Icon = IconMap[s.icon]
+                return (
+                  <Link
+                    key={s.id}
+                    to="/services#new-services"
+                    className="home-new-pill"
+                    style={{ '--pill-color': s.color, '--pill-gradient': s.gradient }}
+                  >
+                    <span className="home-new-pill__icon">
+                      {Icon && <Icon size={16} />}
+                    </span>
+                    <span>{s.shortTitle}</span>
+                  </Link>
+                )
+              })}
+              <Link to="/services" className="home-new-pill home-new-pill--more">
+                View All <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </Reveal>
 
         <Reveal delay={200}>
           <div className="services-sec__cta">

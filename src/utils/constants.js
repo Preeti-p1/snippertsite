@@ -73,6 +73,95 @@ export const SERVICES = [
   },
 ]
 
+// ─── New / Expanded Services ─────────────────────────────────────────────────
+export const NEW_SERVICES = [
+  {
+    id: 'youtube',
+    icon: 'Youtube',
+    title: 'YouTube Channel Management',
+    shortTitle: 'YouTube',
+    description: 'Grow a powerful YouTube presence that drives brand awareness and revenue. We handle everything — from channel setup to ongoing growth management.',
+    color: '#FF0000',
+    gradient: 'linear-gradient(135deg, #FF0000 0%, #FF6B6B 100%)',
+    features: [
+      'YouTube channel setup and optimization',
+      'Video uploading, SEO & keyword optimization',
+      'Content planning and editorial calendar',
+      'Thumbnail design and A/B testing',
+      'Channel analytics and growth reporting',
+    ],
+    badge: 'New',
+  },
+  {
+    id: 'erp',
+    icon: 'GraduationCap',
+    title: 'School & Academy ERP Software',
+    shortTitle: 'ERP Software',
+    description: 'A complete, cloud-based ERP solution built for schools and academies — streamlining administration, academics and communication in one place.',
+    color: '#6C63FF',
+    gradient: 'linear-gradient(135deg, #6C63FF 0%, #A78BFA 100%)',
+    features: [
+      'Student, teacher & staff management',
+      'Attendance tracking & automated alerts',
+      'Fee management & online payments',
+      'Examinations, results & report cards',
+      'Centralized admin dashboard',
+    ],
+    badge: 'New',
+  },
+  {
+    id: 'whatsapp',
+    icon: 'MessageSquare',
+    title: 'WhatsApp Business Messaging',
+    shortTitle: 'WhatsApp',
+    description: 'Reach your customers directly on WhatsApp — the channel they actually use. Automate, engage and convert at scale with our Business API solutions.',
+    color: '#25D366',
+    gradient: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+    features: [
+      'WhatsApp Business API integration',
+      'Automated messaging & notifications',
+      'Bulk messaging campaigns',
+      'WhatsApp chatbot development',
+      'Customer engagement workflows',
+    ],
+    badge: 'New',
+  },
+  {
+    id: 'affiliate',
+    icon: 'BadgeDollarSign',
+    title: 'Affiliate Marketing',
+    shortTitle: 'Affiliate',
+    description: 'Build a high-performing affiliate program that drives consistent leads and sales. We design, manage and scale affiliate campaigns that deliver measurable ROI.',
+    color: '#FF8C42',
+    gradient: 'linear-gradient(135deg, #FF8C42 0%, #FBBF24 100%)',
+    features: [
+      'Affiliate strategy & program setup',
+      'Publisher / partner recruitment',
+      'Product promotion & campaign management',
+      'Lead generation & conversion optimization',
+      'Tracking, analytics & payouts',
+    ],
+    badge: 'New',
+  },
+  {
+    id: 'forex',
+    icon: 'TrendingUp',
+    title: 'Forex Trading Services',
+    shortTitle: 'Forex',
+    description: 'Navigate the forex market with confidence. We provide expert insights, trading education and research-backed strategies for individuals and businesses.',
+    color: '#3ECFCF',
+    gradient: 'linear-gradient(135deg, #3ECFCF 0%, #60A5FA 100%)',
+    features: [
+      'Forex market analysis & insights',
+      'Trading education & guidance',
+      'Market research & strategy reports',
+      'Risk management consulting',
+      'One-on-one trading mentorship',
+    ],
+    badge: 'New',
+  },
+]
+
 export const CONTACT_EMAIL = 'info@spinnert.in'
 export const CONTACT_PHONE = '+91 8376002929'
 export const CONTACT_ADDRESS = 'Gurgaon, Haryana, India'
