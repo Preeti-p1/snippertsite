@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   WHATSAPP FLOATING BUTTON
+   Sits bottom-right, above the scroll-to-top button.
+   scroll-to-top sits at bottom: 32px  →  WA sits at bottom: 92px
+   (48px button + 12px gap = 60px, rounded to 92px for breathing room)
+═══════════════════════════════════════════════════════════════════════ */
+
+.wa-wrap {
+  position: fixed;
+  bottom: 92px;
+  right: 32px;
+  z-index: 501;          /* one above scroll-top (500) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Main button ─────────────────────────────────────────────────────────── */
+.wa-btn {
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 16px rgba(37, 211, 102, 0.45),
+    0 1px 4px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.28s ease;
+  text-decoration: none;
+  outline: none;
+  /* entry animation */
+  animation: wa-pop-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.8s both;
+}
+
+.wa-btn:hover,
+.wa-btn:focus-visible {
+  transform: scale(1.12) translateY(-3px);
+  box-shadow:
+    0 10px 32px rgba(37, 211, 102, 0.6),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wa-btn:active {
+  transform: scale(0.96);
+}
+
+/* ── Ripple rings ─────────────────────────────────────────────────────────── */
+.wa-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(37, 211, 102, 0.55);
+  animation: wa-ripple 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
+.wa-ring--2 {
+  animation-delay: 1.2s;
+}
+
+/* ── Tooltip ──────────────────────────────────────────────────────────────── */
+.wa-tooltip {
+  position: absolute;
+  right: calc(100% + 14px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: #1a1a2e;
+  border: 1px solid rgba(37, 211, 102, 0.25);
+  color: #f0f0ff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 7px 13px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+}
+
+.wa-tooltip--visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Tooltip arrow */
+.wa-tooltip__arrow {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #1a1a2e;
+}
+
+/* ── Keyframes ─────────────────────────────────────────────────────────────── */
+@keyframes wa-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes wa-pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.4) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* ── Mobile adjustments ────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .wa-wrap {
+    bottom: 88px;
+    right: 20px;
+  }
+
+  .wa-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Hide tooltip on touch devices — no hover */
+  .wa-tooltip {
+    display: none;
+  }
+}
