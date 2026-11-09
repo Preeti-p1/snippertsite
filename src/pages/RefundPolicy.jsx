@@ -75,7 +75,7 @@ export default function RefundPolicy() {
               For any refund-related questions, please contact us at:<br />
               <strong>Email:</strong> <a href="mailto:info@spinnert.in">info@spinnert.in</a><br />
               <strong>Phone:</strong> +91 8376002929<br />
-              <strong>Address:</strong> Gurgaon, Haryana, India
+              <strong>Address:</strong> Gurugram, Haryana, India
             </p>
           </div>
         </div>

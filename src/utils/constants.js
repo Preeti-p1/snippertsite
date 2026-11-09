@@ -164,5 +164,5 @@ export const NEW_SERVICES = [
 
 export const CONTACT_EMAIL = 'info@spinnert.in'
 export const CONTACT_PHONE = '+91 8376002929'
-export const CONTACT_ADDRESS = 'Gurgaon, Haryana, India'
+export const CONTACT_ADDRESS = 'Gurugram, Haryana, India'
 export const COMPANY_NAME = 'Spinnert Digital Marketing Agency'

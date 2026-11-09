@@ -73,8 +73,8 @@ export default function Home() {
   return (
     <div className="page-wrapper home-page">
       <Helmet>
-        <title>Spinnert – #1 Digital Marketing Agency in Gurgaon</title>
-        <meta name="description" content="Spinnert is a premium digital marketing agency in Gurgaon offering SEO, PPC, Social Media Marketing, Website Design, Branding and Content Marketing." />
+        <title>Spinnert – #1 Digital Marketing Agency in Gurugram</title>
+        <meta name="description" content="Spinnert is a premium digital marketing agency in Gurugram offering SEO, PPC, Social Media Marketing, Website Design, Branding and Content Marketing." />
       </Helmet>
 
       <HeroSection />
@@ -103,7 +103,7 @@ function HeroSection() {
         <div className="hero__content">
           <div className="hero__badge">
             <Zap size={14} />
-            <span>Gurgaon's Leading Digital Marketing Agency</span>
+            <span>Gurugram's Leading Digital Marketing Agency</span>
           </div>
           <h1 className="hero__title">
             Grow Your Business<br />
@@ -116,7 +116,7 @@ function HeroSection() {
           </p>
           <div className="hero__actions">
             <Link to="/contact" className="btn btn-primary btn-lg">
-              Get Free Consultation <ArrowRight size={18} />
+              Get Consultation <ArrowRight size={18} />
             </Link>
             <Link to="/services" className="btn btn-secondary btn-lg">
               Our Services
@@ -255,7 +255,7 @@ function AboutSection() {
           </Reveal>
           <Reveal delay={200}>
             <p className="about__text">
-              Spinnert Digital Marketing Agency is a dynamic and innovative company based in Gurgaon,
+              Spinnert Digital Marketing Agency is a dynamic and innovative company based in Gurugram,
               specializing in comprehensive digital marketing services for businesses of all sizes.
             </p>
             <p className="about__text">
@@ -685,12 +685,12 @@ function ContactCTASection() {
               <span className="gradient-text">Digital Growth</span>
             </h2>
             <p className="cta-card__subtitle">
-              Get a free consultation with our digital marketing experts.
+              Get a consultation with our digital marketing experts.
               We'll analyze your business and create a custom growth strategy.
             </p>
             <div className="cta-card__actions">
               <Link to="/contact" className="btn btn-primary btn-lg">
-                Get Free Consultation <ArrowRight size={18} />
+                Get  Consultation <ArrowRight size={18} />
               </Link>
               <a href="tel:+918376002929" className="btn btn-secondary btn-lg">
                 Call +91 8376002929

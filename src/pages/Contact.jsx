@@ -72,8 +72,8 @@ export default function Contact() {
   return (
     <div className="page-wrapper">
       <Helmet>
-        <title>Contact Us – Spinnert Digital Marketing Agency Gurgaon</title>
-        <meta name="description" content="Get in touch with Spinnert Digital Marketing Agency. Contact us for a free consultation for SEO, PPC, Social Media and Web Design services." />
+        <title>Contact Us – Spinnert Digital Marketing Agency Gurugram</title>
+        <meta name="description" content="Get in touch with Spinnert Digital Marketing Agency. Contact us for a  consultation for SEO, PPC, Social Media and Web Design services." />
       </Helmet>
 
       <section className="page-hero">
@@ -146,7 +146,7 @@ export default function Contact() {
                     Why Choose Spinnert?
                   </h3>
                   {[
-                    'Free initial consultation',
+                    'Initial consultation',
                     'Response within 24 hours',
                     'Customized strategy for your business',
                     'Transparent pricing',

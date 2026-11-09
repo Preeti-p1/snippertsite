@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="navbar__actions">
           <Link to="/contact" className="btn btn-primary btn-sm">
-            Get Free Consultation
+            Get Consultation
           </Link>
         </div>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <Link to="/contact" className="btn btn-primary" style={{ marginTop: '16px', justifyContent: 'center' }}>
-            Get Free Consultation
+            Get  Consultation
           </Link>
         </nav>
       </div>

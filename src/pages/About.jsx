@@ -50,7 +50,7 @@ export default function About() {
                 We're Your <span className="gradient-text">Digital Growth</span> Partner
               </h1>
               <p className="page-hero__subtitle">
-                Spinnert is a dynamic digital marketing agency in Gurgaon committed to helping businesses
+                Spinnert is a dynamic digital marketing agency in Gurugram committed to helping businesses
                 establish a powerful online presence and achieve sustainable growth.
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function About() {
                   and we set out to be their trusted guide.
                 </p>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: 16 }}>
-                  Based in Gurgaon — India's technology and business hub — we have grown into a full-service
+                  Based in Gurugram — India's technology and business hub — we have grown into a full-service
                   digital marketing agency with a track record of delivering exceptional results. Our team
                   combines deep expertise with creative thinking to craft strategies that work.
                 </p>
@@ -117,7 +117,7 @@ export default function About() {
               {
                 icon: <Target size={28} />,
                 label: 'Our Mission',
-                text: 'To empower businesses of all sizes with world-class digital marketing solutions that drive real, measurable growth. We aim to be the most trusted digital partner for businesses in Gurgaon and beyond.',
+                text: 'To empower businesses of all sizes with world-class digital marketing solutions that drive real, measurable growth. We aim to be the most trusted digital partner for businesses in Gurugram and beyond.',
               },
               {
                 icon: <Eye size={28} />,
@@ -195,7 +195,7 @@ export default function About() {
               <h2>Ready to Start Growing?</h2>
               <p>Let's build a winning digital strategy for your business.</p>
               <Link to="/contact" className="btn btn-primary btn-lg">
-                Get Free Consultation <ArrowRight size={18} />
+                Get Consultation <ArrowRight size={18} />
               </Link>
             </div>
           </Reveal>

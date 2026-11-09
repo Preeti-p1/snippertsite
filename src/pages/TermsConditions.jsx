@@ -83,7 +83,7 @@ export default function TermsConditions() {
             <h2>8. Governing Law</h2>
             <p>
               These terms shall be governed by and construed in accordance with the laws of India.
-              Any disputes shall be subject to the exclusive jurisdiction of the courts in Gurgaon, Haryana.
+              Any disputes shall be subject to the exclusive jurisdiction of the courts in Gurugram, Haryana.
             </p>
 
             <h2>9. Changes to Terms</h2>

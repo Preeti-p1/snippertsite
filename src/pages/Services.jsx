@@ -99,7 +99,7 @@ export default function Services() {
   return (
     <div className="page-wrapper">
       <Helmet>
-        <title>Our Services – Spinnert Digital Marketing Agency Gurgaon</title>
+        <title>Our Services – Spinnert Digital Marketing Agency Gurugram</title>
         <meta
           name="description"
           content="Explore Spinnert's full range of services: SEO, Social Media, PPC, Web Design, YouTube Management, School ERP, WhatsApp Messaging, Affiliate & Forex."
@@ -219,9 +219,9 @@ export default function Services() {
           <Reveal>
             <div className="inner-cta">
               <h2>Not Sure Which Service You Need?</h2>
-              <p>Talk to our experts. We'll assess your business and recommend the right strategy — for free.</p>
+              <p>Talk to our experts. We'll assess your business and recommend the right strategy .</p>
               <Link to="/contact" className="btn btn-primary btn-lg">
-                Get a Free Audit <ArrowRight size={18} />
+                Get a Audit <ArrowRight size={18} />
               </Link>
             </div>
           </Reveal>

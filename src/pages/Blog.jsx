@@ -23,7 +23,7 @@ const posts = [
   { id: 4, category: 'Content Marketing', title: 'Content Marketing That Actually Converts: A 2024 Guide', excerpt: 'How to create content that not only ranks but also converts visitors into leads and paying customers.', author: 'Sonia Kapoor', date: 'Sep 20, 2024', readTime: '8 min', color: '#A78BFA' },
   { id: 5, category: 'Branding', title: 'Why a Strong Brand Identity is Your Greatest Business Asset', excerpt: 'Discover how investing in branding can drive long-term business growth, loyalty and competitive advantage.', author: 'Rahul Kumar', date: 'Sep 12, 2024', readTime: '5 min', color: '#FF8C42' },
   { id: 6, category: 'Analytics', title: 'Using Data Analytics to Make Smarter Marketing Decisions', excerpt: 'Learn how to leverage analytics and reporting to optimize your marketing campaigns and maximize ROI.', author: 'Arjun Malhotra', date: 'Sep 5, 2024', readTime: '6 min', color: '#FBBF24' },
-  { id: 7, category: 'SEO', title: 'Local SEO for Businesses in Gurgaon: The Complete Guide', excerpt: 'How to dominate local search results and attract more customers from Gurgaon and the NCR region.', author: 'Priya Sharma', date: 'Aug 28, 2024', readTime: '9 min', color: '#6C63FF' },
+  { id: 7, category: 'SEO', title: 'Local SEO for Businesses in Gurugram: The Complete Guide', excerpt: 'How to dominate local search results and attract more customers from Gurugram and the NCR region.', author: 'Priya Sharma', date: 'Aug 28, 2024', readTime: '9 min', color: '#6C63FF' },
   { id: 8, category: 'Social Media', title: 'Instagram Marketing: 15 Proven Tips to Grow Your Following', excerpt: 'Organic Instagram strategies that top brands are using to grow their audience and drive real business results.', author: 'Ankita Verma', date: 'Aug 20, 2024', readTime: '6 min', color: '#3ECFCF' },
   { id: 9, category: 'PPC', title: 'Understanding Quality Score in Google Ads and How to Improve It', excerpt: 'A deep dive into Google Ads Quality Score and actionable steps to reduce CPC and improve ad performance.', author: 'Vikash Tiwari', date: 'Aug 14, 2024', readTime: '7 min', color: '#FF6B6B' },
 ]
@@ -41,7 +41,7 @@ export default function Blog() {
   return (
     <div className="page-wrapper">
       <Helmet>
-        <title>Blog – Digital Marketing Insights | Spinnert Gurgaon</title>
+        <title>Blog – Digital Marketing Insights | Spinnert Gurugram</title>
         <meta name="description" content="Read the latest digital marketing tips, strategies and insights from Spinnert's expert team. SEO, PPC, Social Media, Content Marketing and more." />
       </Helmet>
 
