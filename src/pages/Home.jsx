@@ -73,8 +73,8 @@ export default function Home() {
   return (
     <div className="page-wrapper home-page">
       <Helmet>
-        <title>Spinnert – #1 Digital Marketing Agency in Gurugram</title>
-        <meta name="description" content="Spinnert is a premium digital marketing agency in Gurugram offering SEO, PPC, Social Media Marketing, Website Design, Branding and Content Marketing." />
+        <title>Spinnert Digital Agency – #1 Digital Marketing Agency in Gurugram</title>
+        <meta name="description" content="Spinnert Digital Agency is a premium digital marketing agency in Gurugram offering SEO, PPC, Social Media Marketing, Website Design, Branding and Content Marketing." />
       </Helmet>
 
       <HeroSection />
@@ -246,7 +246,7 @@ function AboutSection() {
 
         <div className="about__content">
           <Reveal delay={100}>
-            <span className="section-tag">About Spinnert</span>
+            <span className="section-tag">About Spinnert Digital Agency</span>
           </Reveal>
           <Reveal delay={150}>
             <h2 className="section-title about__title">
@@ -255,7 +255,7 @@ function AboutSection() {
           </Reveal>
           <Reveal delay={200}>
             <p className="about__text">
-              Spinnert Digital Marketing Agency is a dynamic and innovative company based in Gurugram,
+              Spinnert Digital  Agency is a dynamic and innovative company based in Gurugram,
               specializing in comprehensive digital marketing services for businesses of all sizes.
             </p>
             <p className="about__text">
@@ -405,7 +405,7 @@ function WhyUsSection() {
       <div className="container">
         <Reveal>
           <div className="section-header">
-            <span className="section-tag">Why Spinnert</span>
+            <span className="section-tag">Why Spinnert Digital Agency</span>
             <h2 className="section-title">Why Businesses Choose Us</h2>
             <p className="section-subtitle">
               We're not just another digital marketing agency. We're your strategic growth partner.
@@ -505,7 +505,7 @@ function TestimonialsSection() {
       role: 'CEO, TechStartup',
       initials: 'RS',
       color: '#6C63FF',
-      text: 'Spinnert completely transformed our digital presence. Their SEO work helped us rank #1 for our target keywords within 6 months. Exceptional results!',
+      text: 'Spinnert Digital Agency completely transformed our digital presence. Their SEO work helped us rank #1 for our target keywords within 6 months. Exceptional results!',
       stars: 5,
     },
     {
@@ -513,7 +513,7 @@ function TestimonialsSection() {
       role: 'Marketing Head, RetailBrand',
       initials: 'PM',
       color: '#3ECFCF',
-      text: 'The team at Spinnert is incredibly professional and results-oriented. Our social media engagement went up by 300% and leads doubled in 3 months.',
+      text: 'The team at Spinnert Digital Agency is incredibly professional and results-oriented. Our social media engagement went up by 300% and leads doubled in 3 months.',
       stars: 5,
     },
     {
@@ -521,7 +521,7 @@ function TestimonialsSection() {
       role: 'Founder, HealthCare Startup',
       initials: 'AV',
       color: '#FF6B6B',
-      text: 'Working with Spinnert has been a game-changer. Their PPC campaigns deliver consistent ROI and their reporting is always transparent and detailed.',
+      text: 'Working with Spinnert Digital Agency has been a game-changer. Their PPC campaigns deliver consistent ROI and their reporting is always transparent and detailed.',
       stars: 5,
     },
     {
@@ -529,7 +529,7 @@ function TestimonialsSection() {
       role: 'Director, EduTech Company',
       initials: 'NG',
       color: '#FBBF24',
-      text: 'Spinnert redesigned our website and revamped our content strategy. The results were beyond our expectations — traffic up 180% in just 4 months!',
+      text: 'Spinnert Digital Agency redesigned our website and revamped our content strategy. The results were beyond our expectations — traffic up 180% in just 4 months!',
       stars: 5,
     },
     {
@@ -545,7 +545,7 @@ function TestimonialsSection() {
       role: 'CMO, Fashion Brand',
       initials: 'SK',
       color: '#34D399',
-      text: 'Spinnert\'s branding and social media work elevated our brand to a whole new level. They understand our audience and create content that truly connects.',
+      text: 'Spinnert Digital Agency\'s branding and social media work elevated our brand to a whole new level. They understand our audience and create content that truly connects.',
       stars: 5,
     },
   ]

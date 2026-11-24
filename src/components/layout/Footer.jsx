@@ -31,11 +31,11 @@ const legal = [
 ]
 
 const socials = [
-  { icon: <Facebook size={18} />, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: <Instagram size={18} />, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: <Linkedin size={18} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: <Twitter size={18} />, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: <Youtube size={18} />, href: 'https://youtube.com', label: 'YouTube' },
+  { icon: <Facebook size={18} />, href: 'https://www.facebook.com/spinnertdigitalagency', label: 'Facebook' },
+  { icon: <Instagram size={18} />, href: 'https://www.instagram.com/spinnert_digital_agency/', label: 'Instagram' },
+  { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/company/spinnert-digital-marketing', label: 'LinkedIn' },
+  { icon: <Twitter size={18} />, href: 'https://x.com/spinnertagency', label: 'Twitter' },
+  { icon: <Youtube size={18} />, href: 'https://www.youtube.com/@SpinnertDigitalMarketing', label: 'YouTube' },
 ]
 
 export default function Footer() {

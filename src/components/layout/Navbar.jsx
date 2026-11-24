@@ -35,11 +35,11 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} role="banner">
       <div className="container navbar__inner">
         {/* Logo */}
-        <Link to="/" className="navbar__logo" aria-label="Spinnert Home">
+        <Link to="/" className="navbar__logo" aria-label="Spinnert Digital Agency Home">
           <div className="navbar__logo-icon">
             <Zap size={20} />
           </div>
-          <span className="navbar__logo-text">Spinnert</span>
+          <span className="navbar__logo-text">Spinnert Digital Agency</span>
         </Link>
 
         {/* Desktop nav */}
@@ -92,7 +92,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <Link to="/contact" className="btn btn-primary" style={{ marginTop: '16px', justifyContent: 'center' }}>
-            Get  Consultation
+            Get Consultation
           </Link>
         </nav>
       </div>
