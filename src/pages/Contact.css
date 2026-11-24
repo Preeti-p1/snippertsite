@@ -1,0 +1,222 @@
+/* ═══════════════════════════════════════════════════════════════════
+   CONTACT PAGE — WhatsApp integration styles
+═══════════════════════════════════════════════════════════════════ */
+
+/* ── WhatsApp quick-contact card (left column) ─────────────────────────── */
+.contact-wa-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg,
+    rgba(37, 211, 102, 0.08) 0%,
+    rgba(18, 140, 126, 0.06) 100%
+  );
+  border: 1px solid rgba(37, 211, 102, 0.25);
+  border-radius: 14px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-wa-card:hover {
+  border-color: rgba(37, 211, 102, 0.5);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.12);
+}
+
+.contact-wa-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.contact-wa-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-wa-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.contact-wa-card__sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.contact-wa-card__btn {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.contact-wa-card__btn:hover {
+  background: #20c05a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+/* ── Form card header with WhatsApp badge ──────────────────────────────── */
+.contact-form-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-form-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.contact-form-card__sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 340px;
+}
+
+.contact-form-wa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  font-size: 12px;
+  font-weight: 700;
+  color: #25D366;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Submit row ─────────────────────────────────────────────────────────── */
+.contact-submit-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  /* Override the btn-primary gradient with WhatsApp green */
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4) !important;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.contact-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55) !important;
+}
+
+.contact-submit-btn:active:not(:disabled) {
+  transform: translateY(0) !important;
+}
+
+.contact-submit-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.contact-submit-btn__loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Spinner */
+.contact-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: contact-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes contact-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Hint text below button */
+.contact-submit-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-submit-hint strong {
+  color: var(--text-secondary);
+}
+
+/* ── optgroup styling ───────────────────────────────────────────────────── */
+.form-select optgroup {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  background: var(--bg-card);
+}
+
+.form-select option {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+/* ── Mobile ────────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .contact-wa-card {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contact-wa-card__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form-card__header {
+    flex-direction: column;
+  }
+
+  .contact-form-wa-badge {
+    align-self: flex-start;
+  }
+}
