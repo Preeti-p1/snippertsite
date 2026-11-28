@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Zap, Mail, Phone, MapPin,
+  Mail, Phone, MapPin,
   Facebook, Instagram, Linkedin, Twitter, Youtube
 } from 'lucide-react'
+import logoImg from '../../assets/LOGO-SPINNERT.jpg'
 import './Footer.css'
 
 const services = [
@@ -45,9 +46,15 @@ export default function Footer() {
         <div className="container footer__grid">
           {/* Brand */}
           <div className="footer__brand">
-            <Link to="/" className="footer__logo">
-              <div className="footer__logo-icon"><Zap size={20} /></div>
-              <span>Spinnert</span>
+            <Link to="/" className="footer__logo" aria-label="Spinnert Digital Agency Home">
+              <img
+                src={logoImg}
+                alt="Spinnert Digital Agency"
+                className="footer__logo-img"
+                width="140"
+                height="40"
+                loading="lazy"
+              />
             </Link>
             <p className="footer__tagline">
               Transforming businesses through data-driven digital marketing. Your growth is our mission.
@@ -140,7 +147,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>© {new Date().getFullYear()} Spinnert Digital Marketing Agency. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Spinnert Digital Agency. All rights reserved.</p>
           <p>Made with ❤️ in Gurugram, India</p>
         </div>
       </div>

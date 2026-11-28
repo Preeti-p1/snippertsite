@@ -28,31 +28,23 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
+  /* shrink gracefully on smaller viewports */
+  max-width: 200px;
 }
 
-.navbar__logo-icon {
-  width: 36px;
+.navbar__logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  /* smooth resize when navbar compresses on scroll */
+  transition: height var(--transition);
+}
+
+.navbar--scrolled .navbar__logo-img {
   height: 36px;
-  border-radius: 10px;
-  background: var(--gradient-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
-}
-
-.navbar__logo-text {
-  font-size: 1.4rem;
-  font-weight: 800;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.5px;
 }
 
 /* Desktop nav */

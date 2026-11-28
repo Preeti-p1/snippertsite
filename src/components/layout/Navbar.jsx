@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import logoImg from '../../assets/LOGO-SPINNERT.jpg'
 import './Navbar.css'
 
 const navLinks = [
@@ -36,10 +37,13 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__logo" aria-label="Spinnert Digital Agency Home">
-          <div className="navbar__logo-icon">
-            <Zap size={20} />
-          </div>
-          <span className="navbar__logo-text">Spinnert Digital Agency</span>
+          <img
+            src={logoImg}
+            alt="Spinnert Digital Agency"
+            className="navbar__logo-img"
+            width="160"
+            height="44"
+          />
         </Link>
 
         {/* Desktop nav */}
